@@ -1,0 +1,30 @@
+{
+  "name": "my-kiro-project",
+  "version": "1.0.0",
+  "description": "TodoFlow — client-side To-Do list web application. Kiro University Build-Along 2026.",
+  "main": "app.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "node tests/property.test.js",
+    "test:all": "node tests/property.test.js && node tests/functional-sim.js && node tests/logic-audit.js",
+    "start": "python -m http.server 8080",
+    "mcp": "node mcp-server/todoflow-mcp.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adlinsweety/aws-my-kiro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/adlinsweety/aws-my-kiro/issues"
+  },
+  "homepage": "https://github.com/adlinsweety/aws-my-kiro#readme",
+  "devDependencies": {
+    "fast-check": "^4.10.2"
+  }
+}

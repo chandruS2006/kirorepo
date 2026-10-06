@@ -1,0 +1,15 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Run Tests After Spec Task",
+      "trigger": "PostTaskExec",
+      "description": "Runs the property-based tests and feature simulation tests automatically after each spec task is marked completed. Catches regressions immediately.",
+      "action": {
+        "type": "command",
+        "command": "node \"c:\\Users\\ADLIN\\aws-my-kiro\\tests\\property.test.js\" 2>&1 && node \"c:\\Users\\ADLIN\\aws-my-kiro\\tests\\functional-sim.js\" 2>&1",
+        "timeout": 60
+      }
+    }
+  ]
+}

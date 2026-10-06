@@ -1,0 +1,14 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Spec-First Development Reminder",
+      "trigger": "PreTaskExec",
+      "description": "Reminds Kiro to check the specs and steering docs before implementing a new feature, ensuring spec-driven development is followed.",
+      "action": {
+        "type": "agent",
+        "prompt": "Before implementing this task, read .kiro/specs/todoflow-requirements.md and .kiro/specs/architecture.md to confirm the implementation plan aligns with the acceptance criteria and architecture. If the task introduces a new feature not covered by an existing acceptance criterion, note that the spec should be updated first. Keep task-logic.js (pure logic) and app.js (DOM layer) concerns strictly separated per the architecture spec."
+      }
+    }
+  ]
+}
